@@ -30,6 +30,7 @@ public class IOSLauncher extends IOSApplication.Delegate{
 
     @Override
     protected IOSApplication createApplication(){
+    System.out.println("MINzuki: createApplication() START");
 
         if(UIDevice.getCurrentDevice().getUserInterfaceIdiom() == UIUserInterfaceIdiom.Pad){
             Scl.setAddition(0.5f);
@@ -37,6 +38,7 @@ public class IOSLauncher extends IOSApplication.Delegate{
             Scl.setAddition(-0.5f);
         }
 
+        System.out.println("MINzuki: creating IOSApplication");
         return new IOSApplication(new ClientLauncher(){
 
             @Override
