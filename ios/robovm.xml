@@ -38,7 +38,6 @@
         <lib>libs/libarc-freetype.a</lib>
     </libs>
     <frameworks>
-        <framework>arc</framework>
         <framework>UIKit</framework>
         <framework>MetalANGLEKit</framework>
 
